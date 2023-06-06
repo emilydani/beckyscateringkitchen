@@ -1,0 +1,22 @@
+.contact__text-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 25px;
+}
+.contact__text-me {
+    background-image: url(../../../../assets/me.jpg);
+    background-position: 80% 20%;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+@media only screen and (max-width: 1500px) {
+    .contact__text-me {
+        background-position: top;
+    }
+}
+@media only screen and (max-width: 800px) {
+    .contact__text-grid {
+        grid-template-columns: 1fr;
+        grid-template-rows: auto auto;
+    }
+}

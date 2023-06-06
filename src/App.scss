@@ -1,0 +1,58 @@
+// Global Style
+@import "./scss/globalVariables";
+@import "./scss/reset";
+@import "./scss/functions";
+@import "./scss/foodBoxes";
+@import "./scss/sidemenu";
+
+//Repeat
+@import "./ui/views/Repeat/services";
+@import "./ui/views/Repeat/soup";
+@import "./ui/views/Repeat/salad";
+
+// Static Style
+@import "./ui/static/footer/footer";
+@import "./ui/static/nav/nav";
+@import "./ui/static/header/header";
+
+// Home
+@import "./ui/views/Home/components/homeBanner";
+@import "./ui/views/Home/components/homeFourSquare";
+@import "./ui/views/Home/components/homeCall";
+@import "./ui/views/Home/components/homeReviews";
+
+// Lunch
+@import "./ui/views/Lunch/components/lunchBanner";
+@import "./ui/views/Lunch/components/lunchSand";
+@import "./ui/views/Lunch/components/lunchPlatter";
+@import "./ui/views/Lunch/components/lunchSide";
+@import "./ui/views/Lunch/components/lunchCall";
+@import "./ui/views/Lunch/components/lunchDessert";
+
+// Dinner 
+@import "./ui/views/Dinner/components/dinnerBanner";
+@import "./ui/views/Dinner/components/dinnerBuffet";
+@import "./ui/views/Dinner/components/dinnerSide";
+@import "./ui/views/Dinner/components/dinnerDessert";
+
+// Reception
+@import "./ui/views/Receptions/components/recepBanner";
+@import "./ui/views/Receptions/components/recepSavory";
+@import "./ui/views/Receptions/components/recepFruit";
+@import "./ui/views/Receptions/components/recepCookies";
+@import "./ui/views/Receptions/components/recepCake";
+@import "./ui/views/Receptions/components/recepBrownies";
+@import "./ui/views/Receptions/components/recepDesserts";
+
+// Drinks
+@import "./ui/views/Drinks/components/drinksBanner";
+@import "./ui/views/Drinks/components/drinksBeverages";
+
+// Cheesecake
+@import "./ui/views/Cheesecake/components/cakeBanner";
+@import "./ui/views/Cheesecake/components/cakeCake";
+@import "./ui/views/Cheesecake/components/cakeBites";
+
+// Contact
+@import "./ui/views/Contact/components/contactText";
+@import "./ui/views/Contact/components/contactInfo";

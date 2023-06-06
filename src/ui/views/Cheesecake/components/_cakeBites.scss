@@ -1,0 +1,28 @@
+.cake__bites-four-square {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+.cake__bites-one {
+    background-image: url(../../../../assets/cake/straw-cake.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.cake__bites-two {
+    background-image: url(../../../../assets/cake/coc-cake.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.cake__bites-three {
+    background-image: url(../../../../assets/cake/car-cake.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.cake__bites-four {
+    background-image: url(../../../../assets/cake/choc-cake.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}

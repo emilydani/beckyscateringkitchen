@@ -1,0 +1,56 @@
+//dark containter
+.footer__dark-container {
+    background-color: $thm-black;
+    color: $thm-white;
+    position: static;
+    padding: 0 4vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer__flex{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: 80vw;
+}
+
+.footer__dark-container img {
+    height: 80px;
+    margin: 10px;
+    margin-right: 25px;
+}
+
+//link
+.footer__dark-container a {
+    color: $thm-white;
+    text-decoration: none;
+}
+
+.footer__dark-container a:hover {
+    opacity: .7;
+}
+
+//blue container
+.footer__blue-container{
+    background-color: $thm-light-blue;
+    padding: 0 4vh;
+}
+
+.footer__blue-container p {
+    color: $thm-white;
+    text-align: center;
+    margin: 0;
+    padding: 1em;
+}
+
+@media only screen and (max-width: 600px) {
+    .footer__dark-container img {
+        display: none;
+    }
+
+    .footer__dark-container p{
+        text-align: center;
+    }
+}

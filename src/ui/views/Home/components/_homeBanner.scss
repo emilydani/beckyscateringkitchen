@@ -1,0 +1,103 @@
+.home__banner-container {
+    position: relative;
+    text-align: center;
+    color: white;
+}
+
+.home__banner-background {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 1;
+    background-color: rgba(144, 61, 92, 0.9);
+    padding: 45px;
+    max-width: 500px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.home__banner-background h1{
+    margin: auto 0;
+}
+
+//grid
+.home__banner-grid {
+    display: grid;
+    grid-template-columns: 2fr 1fr 1fr;
+    grid-template-rows: 2fr 2fr;
+    height: 550px;
+    grid-gap: 5px;
+    z-index: -1;
+    margin-bottom: $padding-between;
+}
+
+.home__banner-box-one {
+    background-image: url(../../../../assets/home/home-banner-one.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    grid-column: 1 / 2;
+    grid-row: 1 / 3;
+}
+
+.home__banner-box-two {
+    background-image: url(../../../../assets/home/home-banner-two.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    grid-column: 2 / 3;
+    grid-row: 1 / 2;
+}
+
+.home__banner-box-three {
+    background-image: url(../../../../assets/home/home-banner-three.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    grid-column: 3 / 4;
+    grid-row: 1 / 2;
+}
+
+.home__banner-box-four {
+    background-image: url(../../../../assets/home/home-banner-four.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    grid-column: 2 / 4;
+    grid-row: 2 / 3;
+}
+
+@media only screen and (max-width: 750px) {
+    .home__banner-grid {
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 2fr 2fr;
+        height: 500px;
+    }
+
+    .home__banner-box-one {
+        display: none;
+    }
+    .home__banner-box-two {
+        grid-column: 1 / 2;
+    }
+    
+    .home__banner-box-three {
+        grid-column: 2 / 3;
+    }
+    
+    .home__banner-box-four {
+        grid-column: 1 / 3;
+    }
+}
+
+@media only screen and (max-width: 550px) {
+    .home__banner-background {
+        padding: 25px;
+        max-width: 700px;
+    }
+    .home__banner-background h1 {
+        font-size: $thm-font-lrg;
+    }
+}

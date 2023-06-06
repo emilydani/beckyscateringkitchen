@@ -1,0 +1,40 @@
+.menuCont {
+    display: flex;
+    gap: 30px;
+}
+.textCont {
+    width: 65%;
+}
+//
+.menu {
+    background-color: #EFEFEF;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
+    padding: 25px;
+    width: 30%;
+}
+.menu h3 {
+    margin: 0;
+}
+.menu .red-line {
+    width: 100%;
+    margin-bottom: 15px;
+}
+.menu a {
+    color: $thm-light-blue;
+    text-decoration: none;
+    padding: 5px 0;
+    display: inline-block;
+}
+.menu a:hover {
+    color: $thm-dark-blue;
+    text-decoration: underline;
+}
+
+@media only screen and (max-width: 1000px) {
+    .menuCont {
+        flex-direction: column;
+    }
+    .textCont, .menu {
+        width: 100%;
+    }
+}

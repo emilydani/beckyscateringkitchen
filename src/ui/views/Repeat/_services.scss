@@ -1,0 +1,39 @@
+.services__img{
+    background-image: url(../../../assets/home/call.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 400px;
+}
+.services__grid {
+    display: grid;
+    grid-template-columns: 2.5fr 2fr;
+    grid-gap: 25px;
+    margin-bottom: $padding-between;
+    align-items: center;
+}
+.services__heading-margin{
+    margin-bottom: 0;
+}
+
+.services__p-margin{
+    margin-top: .25em;
+}
+
+.services__grid h2 {
+    font-size: $thm-font-ult;
+    margin-top: 0;
+}
+
+@media only screen and (max-width: 725px) {
+    .services__grid {
+        grid-template-columns: 2fr;
+        grid-template-rows: 2fr 2fr;
+        grid-gap: 0;
+    }
+    .services__img{
+        grid-row: 2/3;
+        height: 325px;
+    }
+
+}

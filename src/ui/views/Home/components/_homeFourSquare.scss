@@ -1,0 +1,84 @@
+//grid
+.home__four-square-grid{
+    margin-top: $padding-between;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-gap: 15px;
+}
+
+//positioning
+.home__four-square-container{
+    position: relative;
+}
+
+.home__four-square-text-block{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 2;
+    background-color: rgba(255, 255, 255, 0.75);
+    padding: 0 20px;
+    text-align: center;
+    width: 85%;
+    height: 85%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.home__four-square-text-block h2 {
+    margin: 0 auto;   
+}
+
+//images
+.home__four-square-lunch-img{
+    background-image: url(../../../../assets/home/lunch.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 400px;
+}
+
+.home__four-square-dinner-img{
+    background-image: url(../../../../assets/home/dinner.jpg);
+    background-position: bottom;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 400px;
+}
+
+.home__four-square-reception-img{
+    background-image: url(../../../../assets/home/recep.jpg);
+    background-position: bottom;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 400px;
+}
+.home__four-square-cake-img{
+    background-image: url(../../../../assets/home/cake.jpg);
+    background-position: bottom;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 400px;
+}
+
+@media only screen and (max-width: 1350px) {
+    .home__four-square-grid{
+        grid-template-columns: 1fr 1fr;
+        grid-gap: 25px;
+    }
+}
+
+@media only screen and (max-width: 750px) {
+    .home__four-square-grid{
+        grid-gap: 5px;
+    }
+}
+@media only screen and (max-width: 600px) {
+    .home__four-square-grid{
+        grid-template-columns: 1fr;
+        grid-gap: 15px;
+    }
+}

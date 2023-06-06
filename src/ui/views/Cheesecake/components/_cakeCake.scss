@@ -1,0 +1,136 @@
+$cake-image-height: 100%;
+
+.cake__cake-grid {
+    display: grid;
+    grid-template-columns: 1fr 1.5fr;
+    grid-gap: 25px;
+}
+
+.cake__cake-grid h4 {
+    margin: .5em 0;
+    font-size: $thm-font-medlrg;
+}
+
+// boxs
+.cake__cake-container{
+    position: relative;
+}
+
+.cake__cake-text-block{
+    position: absolute;
+    top: 80%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 2;
+    background-color: rgba(255, 255, 255, 0.75);
+    padding: 0 5px;
+    text-align: center;
+    height: 75px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+// square boxes 
+.cake__cake-squares-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 10px;
+}
+
+// images
+.cake__cake-snickers {
+    background-image: url(../../../../assets/cake/snickers.jpg);
+    background-position: bottom;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: $cake-image-height;
+}
+
+.cake__cake-key {
+    background-image: url(../../../../assets/cake/key.jpg);
+    background-position: bottom;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: $cake-image-height;
+}
+
+.cake__cake-rasp {
+    background-image: url(../../../../assets/cake/rasp.jpg);
+    background-position: bottom;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: $cake-image-height;
+}
+
+.cake__cake-mac {
+    background-image: url(../../../../assets/cake/coconut-cake.JPG);
+    background-position: bottom;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: $cake-image-height;   
+}
+
+.cake__cake-choc{
+    background-image: url(../../../../assets/cake/choc.jpg);
+    background-position: bottom;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: $cake-image-height; 
+}
+
+.cake__cake-pb {
+    background-image: url(../../../../assets/cake/pb.JPG);
+    background-position: bottom;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: $cake-image-height; 
+}
+
+.cake__cake-german {
+    background-image: url(../../../../assets/cake/german.jpg);
+    background-position: bottom;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: $cake-image-height;  
+}
+.cake__cake-ny {
+    background-image: url(../../../../assets/cake/ny.jpg);
+    background-position: bottom;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: $cake-image-height;  
+}
+.cake__cake-pump {
+    background-image: url(../../../../assets/cake/pumpkin.jpg);
+    background-position: bottom;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: $cake-image-height;
+}
+
+@media only screen and (max-width: 900px) {
+    .cake__cake-grid {
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1.5fr auto;
+    }
+    .cake__cake-text-block{
+        top: 85%;   
+    }
+}
+@media only screen and (max-width: 625px) {
+
+    .cake__cake-squares-grid {
+        grid-template-columns: 1fr 1fr;
+        grid-gap: 5px;
+    }  
+    .cake__cake-grid {
+        grid-template-rows: auto auto;
+    }
+    .cake__cake-snickers, .cake__cake-key, .cake__cake-rasp, .cake__cake-mac, .cake__cake-choc, .cake__cake-pb, .cake__cake-german, .cake__cake-ny, .cake__cake-pump {
+        height: 225px;
+    }
+
+}

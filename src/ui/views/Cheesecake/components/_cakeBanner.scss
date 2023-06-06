@@ -1,0 +1,103 @@
+.cake__banner-container {
+    position: relative;
+    text-align: center;
+    color: white;
+}
+
+.cake__banner-background {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 1;
+    background-color: rgba(7, 127, 180, 0.9);
+    padding: 40px;
+    max-width: 450px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.cake__banner-background h1{
+    margin: auto 0;
+}
+
+//grid
+.cake__banner-grid {
+    display: grid;
+    grid-template-columns: 1fr 1.75fr 1fr;
+    grid-template-rows: 2fr 2fr;
+    height: 550px;
+    grid-gap: 5px;
+    z-index: -1;
+    margin-bottom: $padding-between;
+}
+
+.cake__banner-box-one {
+    background-image: url(../../../../assets/recep/cheese.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    grid-column: 1 / 2;
+    grid-row: 1 / 3;
+}
+
+.cake__banner-box-two {
+    background-image: url(../../../../assets/cake/table.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    grid-column: 2 / 3;
+    grid-row: 1 / 3;
+}
+
+.cake__banner-box-three {
+    background-image: url(../../../../assets/cake/coconut-cake.JPG);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    grid-column: 3 / 4;
+    grid-row: 1 / 2;
+}
+
+.cake__banner-box-four {
+    background-image: url(../../../../assets/dinner/ny-cake.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    grid-column: 3 / 4;
+    grid-row: 2 / 3;
+}
+
+@media only screen and (max-width: 750px) {
+    .cake__banner-grid {
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 2fr 2fr;
+        height: 500px;
+    }
+
+    .cake__banner-box-two {
+        display: none;
+    }
+    .cake__banner-box-one {
+        grid-column: 1 / 2;
+    }
+    
+    .cake__banner-box-three {
+        grid-column: 2 / 3;
+    }
+    
+    .cake__banner-box-four {
+        grid-column: 2 / 3;
+    }
+}
+
+@media only screen and (max-width: 550px) {
+    .cake__banner-background {
+        padding: 25px;
+        max-width: 700px;
+    }
+    .cake__banner-background h1 {
+        font-size: $thm-font-lrg;
+    }
+}
